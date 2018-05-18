@@ -12,3 +12,17 @@ to make JSON requests - need to be working over HTTP, not the file system. Need 
 
 Data can only be accessed INSIDE of the callback.
 
+**d3.csv(url, callback(error, data))** makes a request to a CSV file and transforms it to a valid JavaScript file.
+The .csv method returns each row as an object. Properties are STRINGS by default. To change this, another callback can be passed: FORMATTER callback
+
+**d3.csv(url, formatter, callback)** formatter is run before the second callback and returns data in the desired format to the second (main) callback.
+
+**formatter callback** - accepts 3 arguments:
+function(row, i, headers){}
+- row: current CSV row as an object
+- i - row index
+- headers - array of csv headers (also keys in the row object)
+
+
+
+
