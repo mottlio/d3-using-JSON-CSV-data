@@ -1,5 +1,7 @@
 Project URL: https://mottlio.github.io/d3-using-JSON-CSV-data/
 
+Note: to see full functionality clone locally and run a HTTP server. 
+
 This project extracts data in JSON and CSV formats for use with D3. Data from both files is combined and later filtered.
 
 JSON file includes information on countries.
