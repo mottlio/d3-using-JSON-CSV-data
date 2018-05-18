@@ -23,6 +23,20 @@ function(row, i, headers){}
 - i - row index
 - headers - array of csv headers (also keys in the row object)
 
+This method can REMOVE ROWS before working with data - if it returns null or undefined.
 
+Other request methods:
 
+d3.text
+d3.tsv
+d3.html
+d3.xml
+d3.request
 
+**D3.QUEUE( )**
+a method to combine data coming from various requests. Normally data is only available within the callback. 
+Returns a D3 queue object which is used to manage asynchronous tasks.
+
+queue.defer(function, arguments)
+queue.await() -> makes responses available as a comma-separated list of arguments
+queue.awaitAll() -> gives an array of responses
